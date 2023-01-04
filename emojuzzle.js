@@ -84,7 +84,8 @@ function gameEmojuzzle() {
         this.k = k;
       }
       const obj3 = new PlayerChoice(...emojiArr);
-      //linking letters(characters) from readlineSync prompt method with adequate emojis
+      
+      //converting letters(characters) from readlineSync prompt method to adequate emojis
       let playerArr = [];
       for (let e of Object.values(obj2)) {
         for (let b of Object.keys(obj3)) {
@@ -95,6 +96,7 @@ function gameEmojuzzle() {
       }
 
       console.log(chalk.magentaBright.bold(playerArr.join(" ")));
+      
       //main condition for comparing player choice and random(machine) choice
       if (samePositionElements(puzzleArray, playerArr) === 4) {
         style.gradient = ["magenta", "red"];
@@ -120,6 +122,7 @@ function gameEmojuzzle() {
           console.log(byeWin.string);
         }
         process.exit()
+      
       } else {
         console.log(
           chalk.bgYellow.bold(loopStopCondition),
