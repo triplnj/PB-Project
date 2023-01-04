@@ -85,7 +85,7 @@ function gameEmojuzzle() {
       }
       const obj3 = new PlayerChoice(...emojiArr);
       
-      //converting letters(characters) from readlineSync prompt method to adequate emojis
+      //converting letters(characters) from readlineSync prompt method to corresponding emojis
       let playerArr = [];
       for (let e of Object.values(obj2)) {
         for (let b of Object.keys(obj3)) {
