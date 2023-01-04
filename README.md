@@ -11,10 +11,10 @@ The purpose of this code is to create a simple guessing game called "Emojuzzle".
 
 > ### Functionality 
 
-- The game starts by displaying a welcome message using the cfonts library to display text in a specific style. 
+- The game starts by displaying a welcome message using the cfonts package to display text in a specific style. 
 - It then creates an array of 6 possible emojis and uses the randomArr function to randomly select 4 of them and store them in the puzzleArray variable. 
 - The game then prompts the player to enter their guesses and uses the gameLoop function to run the game.
-- The gameLoop function reads the player's input using the readline library, splits it into an array of characters, and stores it in the guessArr variable. 
+- The gameLoop function reads the player's input using the readline package, splits it into an array of characters, and stores it in the guessArr variable. 
 - It then uses the PlayerChoice constructor function to create an object with keys corresponding to the characters and values corresponding to the appropriate emojis. 
 - The function then iterates through the guessArr array and pushes the corresponding emojis to the playerArr array. 
 - It then compares the playerArr array to the puzzleArray array to determine if the player's guess was correct. 
